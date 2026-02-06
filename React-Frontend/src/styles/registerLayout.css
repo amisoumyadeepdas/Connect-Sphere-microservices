@@ -1,0 +1,143 @@
+.registerPage {
+  min-height: 100vh;
+  background: url("Slide1.JPG") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.appHeader {
+  text-align: center;
+  padding: 25px 15px 10px;
+}
+
+.appHeader h1 {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+
+  /* Premium gradient text */
+  background: linear-gradient(90deg, #e50000, #17a2b8);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.appHeader p {
+  font-size: 16px;
+}
+
+/* ALERT */
+.registerAlert {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* FORM */
+.registerWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerCard {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(38, 80, 71, 0.9);
+  padding: 30px;
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* INPUTS */
+.registerCard .form-control {
+  border-radius: 10px;
+  height: 45px;
+}
+
+/* GENDER */
+.genderGroup {
+  display: flex;
+  gap: 20px;
+}
+
+/* FOOTER */
+.appFooter {
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  color: #080808;
+}
+
+/* MOBILE FIRST */
+@media (max-width: 576px) {
+  .registerCard {
+    padding: 20px;
+  }
+}
+
+.loginErrorBanner {
+    background-color: #e1112485;
+    color: #ffffff;
+    border: 1px solid #ff8080;
+}
+
+.loginSuccessBanner {
+    background-color: #1e7e34;
+    color: #ffffff;
+    border: 1px solid #1c7430;
+}
+
+/* BUTTONS */
+.registerCard .btn {
+  height: 48px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #20c997, #17a2b8);
+  border: none;
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #1ab386, #148a9c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(32, 201, 151, 0.3);
+}
+
+.btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+
+/* ALERT POSITIONING - Now between header and form */
+/* .loginAlertWrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex-shrink: 0;
+}
+
+.loginAlertWrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 10px 0 20px;
+  font-size: 15px;
+  animation: slideDown 0.3s ease-out;
+} */
